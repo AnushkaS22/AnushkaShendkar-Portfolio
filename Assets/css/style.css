@@ -1,0 +1,382 @@
+
+:root{
+    --first-color: #14213d;
+    --second-color: #fca311;
+    --font1:"Sevillana", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    background-color: rgb(14, 13, 13);
+    
+   
+}
+li {
+    list-style-type: none;
+}
+
+ul {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bars{
+    color: white;
+    font-size: 20px;
+    
+}
+
+.offcanvas{
+    background-color: var(--first-color);
+    
+}
+
+.Navigation{
+    height: 10vh;
+    justify-content: space-evenly;
+  }
+  .nav-ul li{
+    font-family: var(--font1);
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+ .Logo h3{
+    font-family: var(--font1);
+ } 
+
+
+.profile_text_p2{
+    border-right: 2px solid;
+    width: 43%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typing 2.5s steps(13),
+      cursor .4s step-end infinite alternate;
+}
+
+.info-abtme{
+    text-align: justify;
+    color: gainsboro;
+}
+
+.profile_btn_container div{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-family: var(--font1);
+    padding-top: 20px;
+}
+
+.profile_btn_container_resume{
+    background-color: #9d0208;
+    
+}
+
+.profile_btn_container_projects{
+    background-color: #f48c06;
+}
+.profile_btn_container_contact{
+    background-color:#80D8DA ;
+}
+.profile{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;  
+    overflow: hidden;
+    position: relative;
+}
+
+.profile{
+    margin-left: 15px;
+}
+
+
+.profile img{
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: scaleX(-1);
+    
+    
+}
+
+.Circle{
+    position:absolute; 
+    width: 255px;
+    height: 255px;
+    top: 77.5%;
+    right: 8.9%;
+    border-radius: 50%;
+    background: linear-gradient(45deg, transparent,transparent 40%, #e5f403);
+    animation: animate 2s linear infinite;
+}
+
+.Btn,.Btn2 {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+  }
+
+  .Btn2{
+    margin-left: 16px;
+  }
+  
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+  }
+  
+  .BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all .3s;
+  }
+
+  
+  
+  .Btn:hover .BG,.Btn2:hover .BG  {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  
+  .Btn:hover .svgContainer ,.Btn2:hover .svgContainer{
+    background-color: rgba(156, 156, 156, 0.466);
+    backdrop-filter: blur(4px);
+  }
+.ph,.em{
+    color: white;
+}
+
+.Footer p{
+    font-size: 14px;
+    
+}
+
+  
+
+@keyframes cursor{
+    50%{
+        border-color: transparent;
+       
+    }
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+       
+    }
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+        filter:hue-rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        filter:hue-rotate(360deg);
+    }
+}
+
+
+
+
+.profile_btn_container_resume:hover{
+    box-shadow: 0px 0px 12px #ef233c;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: bold;
+}
+.profile_btn_container_projects:hover{
+    box-shadow: 0px 0px 15px #ffba08;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.profile_btn_container_contact:hover{
+    box-shadow: 0px 0px 12px #d8e2dc;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.ph:hover,.em:hover{
+    color: grey;
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+}
+
+@media (min-width:375px)
+{
+    .Circle{
+        top: 70.5%;
+        right: 18.5%;
+        
+    }
+    .profile{
+        margin-left:29px
+    }
+
+    .Project-stack2{
+        margin-left: 40px;
+    }
+}
+
+
+@media (min-width:425px){
+    .profile{
+        margin-left:69px;
+    }                                                                                                                                                                                                                                                                                                                
+}
+@media (min-width:768px) {
+  .Navigation{
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .profile_text{
+    text-align: center;
+  }
+    
+  .role{
+    margin-left:40%;
+    width: 37%;
+}
+.profile{
+    margin-left: 34%;
+}
+.Circle{
+   
+    top: 60%;
+    right: 32.3%;
+    
+   
+}
+ 
+}
+
+@media (min-width: 1024px) {
+    .Logo{
+        margin-top: 37px;
+    }
+
+    
+    
+    .nav-ul-li1 a, .nav-ul-li2 a {
+      padding-right: 10px; /* Adjust the value as needed */
+      border-right: 2px solid transparent;
+      border-image: linear-gradient(to bottom, #9c2609, #eb9a20) 1;
+    }
+    
+    .nav-ul a {
+      padding: 5px;
+      background: linear-gradient(100deg,#e73e68,#57065a);
+      background-clip: text;
+      color: transparent;
+    }
+
+    .svg {
+        width: 30px;
+        height: 30px;
+        opacity: 80%;
+        cursor: pointer;
+        padding-bottom:10px;
+        transition: 0.2s;
+        color: #80D8DA;
+      }
+
+      .svg:hover {
+        transition: 0.1s;
+        color: rgb(235, 40, 176);
+        position: relative;
+        
+        opacity: 100%;
+      }
+
+      .profile_text_p2{
+        border-right: 2px solid;
+        width: 32%;
+      }
+       
+      .Circle{
+        top: 57%;
+        right: 40.6%;
+      }
+  }
+  
+  @media(min-width:1440px){
+    .role{
+        margin-left:45%;
+        width: 30%;
+    }
+    .info-abtme{
+        margin: 3%;
+    }
+    .profile_btn_container div{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        font-family: var(--font1);
+        
+    }
+    .profile_btn_container a{
+       font-size: 20px;
+       
+    }
+    
+    .profile{
+        margin-left: 43%;
+    }
+
+    .Circle{
+        top: 61%;
+        right: 40.8%;
+    }
+    .contact-info{
+        display: flex;
+        justify-content: space-around;
+    }
+  }
+
+
+

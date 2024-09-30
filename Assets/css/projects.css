@@ -1,0 +1,95 @@
+:root{
+    --first-color: #14213d;
+    --second-color: #fca311;
+    --font1:"Sevillana", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    background-color: rgb(14, 13, 13);
+   
+}
+li {
+    list-style-type: none;
+}
+
+ul {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bars{
+    color: white;
+    font-size: 20px;
+    
+}
+
+.offcanvas{
+    background-color: var(--first-color);
+    
+}
+
+.Navigation{
+    height: 10vh;
+  }
+
+ .Logo h3{
+    font-family: var(--font1);
+ } 
+ .Project-stack1{
+    padding-left: 10px;
+ }
+ .Project-stack2{
+    padding-left: 160px;
+ }
+
+ .Project-stack1 img,.Project-stack2 img,.Project-stack2 iframe{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+ }
+
+ video{
+    object-fit: cover;
+ }
+ 
+ .Project-stack1 div,.Project-stack2 div{
+    
+    width: 150px;
+    height: 150px;
+   
+ }
+
+ 
+ 
+
+ .Footer p{
+    font-size: 14px;
+    
+}
+
+.Project-stack1 img:hover,.Project-stack2 img:hover{
+    opacity: 0.5;   
+}
+
+@media (min-width:768px){
+    .Navigation{
+        justify-content: space-between;
+        padding: 20px;
+      }
+}
+
+ 

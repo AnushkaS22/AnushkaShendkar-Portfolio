@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!--Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <!--custom css-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="Assets/css/style.css" />
+    <title>Cake</title>
+  </head>
+  <body data-bs-spy="sroll" data-bs-target=".navbar" data-bs-offset="75">
+    <header>
+      <div class="Main-Header d-flex justify-content-between p-3 d-xl-none">
+        <div class="main1">
+          <img
+            src="Assets/images/logo-img-1.png"
+            alt=""
+            class="dark-header-logo"
+          />
+        </div>
+
+        <div class="main2">
+          <button
+            class="btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasTop"
+            aria-controls="offcanvasTop"
+          >
+            <i class="bi bi-three-dots-vertical dots"></i>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-top"
+            tabindex="-1"
+            id="offcanvasTop"
+            aria-labelledby="offcanvasTopLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body h-50">
+              <ul class="offcanvas-ul">
+                <li class="offcanvas-ul-li">HOME</li>
+                <li class="offcanvas-ul-li">PAGES</li>
+                <li class="offcanvas-ul-li">PORTFOLIO</li>
+                <li class="offcanvas-ul-li">SHOP</li>
+                <li class="offcanvas-ul-li">BLOG</li>
+                <li class="offcanvas-ul-li">ELEMENTS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Banner Section-->
+
+    <div class="Banner-Section">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel_item1 carousel-item active">
+            <img
+              src="Assets/images/rev-slider-img-1.jpg"
+              class="slider-bg-img1 bg-img d-block w-100"
+              alt="..."
+            />
+            <div class="Carousel_Texts">
+              <img
+                src="Assets/images/home-2-rev-img-2.png"
+                alt=""
+                class="slider_textimg1"
+              />
+              <img
+                src="Assets/images/home-2-rev-img-3.png"
+                alt=""
+                class="slider_textimg2"
+              />
+            </div>
+          </div>
+          <div class="carousel_item2 carousel-item">
+            <img
+              src="Assets/images/rev-slider-img-5.jpg"
+              class="slider-bg-img2 bg-img d-block w-100"
+              alt="..."
+            />
+            <div class="Carousel_Texts">
+              <img
+                src="Assets/images/home-2-rev-img-5-1.png"
+                alt=""
+                class="slider_textimg3"
+              />
+              <img
+                src="Assets/images/home-2-rev-img-5.png"
+                alt=""
+                class="slider_textimg4"
+              />
+            </div>
+          </div>
+          <div class="carousel_item3 carousel-item">
+            <img
+              src="Assets/images/rev-slider-img-4.jpg"
+              class="slider-bg-img3 bg-img d-block w-100"
+              alt="..."
+            />
+            <div class="Carousel_Texts">
+              <img
+                src="Assets/images/home-2-rev-img-8.png"
+                alt=""
+                class="slider_textimg5"
+              />
+              <img
+                src="Assets/images/home-2-rev-img-9.png"
+                alt=""
+                class="slider_textimg6"
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon d-none d-md-none"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon d-none d-md-none"
+            aria-hidden="true"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="Banner-Header d-none d-md-none d-lg-none d-xl-block">
+      <ul class="banner-header-ul d-flex">
+        <li class="banner-ul-li">
+          <img src="Assets/images/logo-img-light-1.png" alt="" />
+        </li>
+        <li class="banner-ul-li">
+          <ul class="banner-header-list-ul d-flex">
+            <li class="banner-header-list-ul-li">HOME</li>
+            <li class="banner-header-list-ul-li">PAGES</li>
+            <li class="banner-header-list-ul-li">PORTFOLIO</li>
+            <li class="banner-header-list-ul-li">SHOP</li>
+            <li class="banner-header-list-ul-li">BLOG</li>
+            <li class="banner-header-list-ul-li">CONTACT</li>
+          </ul>
+        </li>
+        <li class="banner-ul-li">
+          <ul class="banner-header-ul2 d-flex">
+            <li class="banner-header-list-ul2-li">
+              <a href="#"><i class="bi bi-search search"></i></a>
+            </li>
+            <li class="banner-header-list-ul2-li">
+              <a href="#"><i class="bi bi-bag cart"></i></a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!--Specials Products-->
+    <div class="Specials_Section">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center">
+          <div class="col">
+            <div class="card h-100 border-0">
+              <img
+                src="Assets/images/p1-img-4.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">TRUFFLE CHOCO</h5>
+                <p class="card-text mt-3">
+                  But I must explain to you how all this mistaken idea of
+                  denouncing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border-0">
+              <img
+                src="Assets/images/p1-img-3.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">ROCHER BALLS</h5>
+                <p class="card-text mt-3">
+                  But I must explain to you how all this mistaken idea of
+                  denouncing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border-0">
+              <img
+                src="Assets/images/p1-img-2.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">VANILLA CAKE</h5>
+                <p class="card-text mt-3">
+                  But I must explain to you how all this mistaken idea of
+                  denouncing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border-0">
+              <img
+                src="Assets/images/p1-img-1.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">ALMOND CUP</h5>
+                <p class="card-text mt-3">
+                  But I must explain to you how all this mistaken idea of
+                  denouncing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Menu Section-->
+    <div
+      class="Menu_Section mt-5"
+      style="
+        background-image: url('../07-Cake/Assets/images/background-img-1.jpg');
+        height: 900px;
+        background-position: center center;
+      "
+    >
+      <div class="container-fluid text-white pt-5">
+        <h2 class="menu_h2">CAKE MENU</h2>
+        <p class="menu_p_top mt-4">
+          Iuvaret conceptam ad vel, in justo habemus deleniti sea, eam audiam
+          omnesque ex. Vix augue mediocrem in, ad possi. Iuvaret conceptam ad
+          vel, in justo habemus deleniti sea, eam audiam omnesque ex. Vix augue
+          mediocrem in, ad possi.
+        </p>
+        <ul class="menu_ul mt-5">
+          <li class="menu_ul_li mt-5">
+            <h3>CREME BRULEE</h3>
+            <p>Cream, coffee beans, vanilla............. $25</p>
+          </li>
+          <li class="menu_ul_li mt-5">
+            <h3>TARTE TATIN</h3>
+            <p>Gala apples, cranberries, cream............. $22</p>
+          </li>
+          <li class="menu_ul_li mt-5">
+            <h3>MANGO VACHERIN</h3>
+            <p>Vanilla ice cream, mango, basil............. $23</p>
+          </li>
+        </ul>
+        <div class="Menu_btn">
+          <button class="menu_btn border-0">MENU</button>
+        </div>
+      </div>
+    </div>
+
+    <!--True Delight-->
+    <div class="True_Delight_Section">
+      <div class="container">
+        <div class="True_Delight_Contents d-xl-flex">
+          <div class="TD_img">
+            <img
+              src="Assets/images/background-img-3.jpg"
+              alt=""
+              class="td-img w-100"
+            />
+          </div>
+          <div class="TD_text mt-3">
+            <h1>A TRUE DELIGHT</h1>
+            <p class="mt-4">
+              Iuvaret conceptam ad vel, in justo habemus deleniti sea, eam
+              audiam omnesque ex. Vix augue mediocrem in, ad possit latine
+              expetenda nam sapientem eu.
+            </p>
+            <button class="view_btn mt-4 border-0">VIEW MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Chocolate balls Video-->
+    <div class="Choco_balls">
+      <div class="container-fluid">
+        <video
+          width="100%"
+          height="400"
+          controls
+          autoplay="autoplay"
+          class="video-mp4 bg-light"
+        >
+          <source
+            src="Assets/images/2_Y2FuZHkgcG91cmVkIGNob2NvbGF0ZQ.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </div>
+
+    <!--Count Section-->
+    <div class="Count mt-5">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 text-center">
+          <div class="col">
+            <div class="card h-100 border-0">
+              <h1>96</h1>
+              <div class="card-body">
+                <h5 class="card-title">CLIENTS</h5>
+                <p class="card-text mt-3">
+                  Lorem ipsum dolor sit amet, est at alii oporteat moderatius.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border-0">
+              <h1>13</h1>
+              <div class="card-body">
+                <h5 class="card-title">EMPLOYEES</h5>
+                <p class="card-text mt-3">
+                  Lorem ipsum dolor sit amet, est at alii oporteat moderatius.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border-0">
+              <h1>84</h1>
+              <div class="card-body">
+                <h5 class="card-title">CLIENTS</h5>
+                <p class="card-text mt-3">
+                  Lorem ipsum dolor sit amet, est at alii oporteat moderatius.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border-0">
+              <h1>715</h1>
+              <div class="card-body">
+                <h5 class="card-title">CAKES</h5>
+                <p class="card-text mt-3">
+                  Lorem ipsum dolor si t amet, est at alii oporteat moderatius.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Make Cakes Not War Section-->
+    <div class="Make-Cakes-Section">
+      <div
+        class="Make_Section mt-5 bg-image"
+        style="
+          background-image: url('../07-Cake/Assets/images/h2-parallax-5.jpg');
+          height: 550px;
+          background-position: top center;
+        "
+      >
+        <div class="container-fluid text-white pt-5">
+          <img src="Assets/images/h2-img-11.png" alt="" class="war-img" />
+        </div>
+      </div>
+    </div>
+
+    <!--Footer Section-->
+    <footer class="footer_class">
+      <div class="col">
+        <div class="Contact text-white text-center">
+          <h2>CONTACT</h2>
+          <ul class="cont-ul">
+            <li class="cont-ul-li">
+              Heinrichstrasse 267c / 3. Stock 8005 Zürich
+            </li>
+            <li class="cont-ul-li">Email: dolcino@qodeinteractive.com</li>
+            <li class="cont-ul-li">Phone: +88(0) 101 0000 000</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col mt-5">
+        <div class="Dolcino-pastries text-center">
+          <div class="Dolcino1">
+            <img src="Assets/images/logo-footer.png" alt="" />
+            <p class="dolcino-p1">eat what you love</p>
+            <h3 class="text-white">DOLCINO PASTRIES</h3>
+            <p class="dolcino-p2 text-white pt-4">
+              1926. - Year of beggining. There are many variations of passa ges
+              of Lorem Ipsum available, but the majority suffered alter.
+            </p>
+          </div>
+
+          <div class="Dolcino2">
+            <ul class="Socials-ul d-flex mt-5">
+              <li class="socials-li text-center">
+                <a href="#"><i class="fa-brands fa-facebook-f fb"></i></a>
+              </li>
+              <li class="socials-li text-center">
+                <a href="#"><i class="fa-brands fa-twitter twit"></i></a>
+              </li>
+              <li class="socials-li text-center">
+                <a href="#"><i class="fa-brands fa-linkedin-in lin"></i></a>
+              </li>
+              <li class="socials-li text-center">
+                <a href="#"><i class="fa-brands fa-instagram insta"></i></a>
+              </li>
+              <li class="socials-li text-center">
+                <a href="#"><i class="fa-brands fa-pinterest-p pin"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="Dolcino3 pt-5">
+            <img src="Assets/images/footer-img.png" alt="" class="map" />
+          </div>
+        </div>
+        <p class="footer_p">© 2018 Qode Interactive, All Rights Reserved</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

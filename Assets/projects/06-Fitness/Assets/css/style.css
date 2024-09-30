@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+ul {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-two{
+  background-color: #D9DDE8;
+}
+
+.bars{
+  font-size: 30px;
+  
+}
+
+.search-icon,.cart{
+  font-size: 20px;
+  color: black;
+  
+}
+
+.search-icon{
+  padding-left:140px;
+}
+
+.header-logo{
+  width: 220px;
+  height:27px;
+  padding-top:10px;
+}
+
+.header_text-ul-li{
+  padding-left:30px;
+}
+
+.header_text-ul-li:hover,.search-icon:hover,
+.cart:hover{
+  color: darkgray;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+.carousel-item {
+  position: relative;
+}
+
+.Circle {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  from{
+    transform: rotate(0deg);
+  }
+
+  to{
+    transform: rotate(360deg);
+  }
+  
+}
+
+.circle_img {
+  width: 260px;
+  height: 250px;
+}
+
+.slider_img1,
+.slider_img2,
+.slider_img3 {
+  height: 300px;
+  object-fit: cover;
+}
+
+.carousel-caption h1 {
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+}
+
+.service_text p:first-child {
+  color: red;
+  font-size: 12px;
+}
+
+.service_text a {
+  color: red;
+}
+
+.service_text p:first-child:hover {
+  color: lightgray;
+}
+
+.service_text h2:hover {
+  color: red;
+}
+
+.num__li h1 {
+  color: red;
+}
+
+input {
+  width: 280px;
+  height: 50px;
+}
+
+textarea {
+  width: 280px;
+  height: 200px;
+}
+
+.send_btn {
+  width: 200px;
+  height: 50px;
+  background-color: red;
+  color: white;
+}
+
+.Location p,
+.location_ul_li a,
+.footer__a,
+.footer__a_date,
+.li_anchor,
+.footer_end p,
+.Socials p {
+  color: darkgrey;
+  line-height: 2.5;
+}
+
+.Location_ul {
+  padding-left: 5px;
+}
+
+.location_ul_li a:hover {
+  color: red;
+}
+
+.li_anchor {
+  font-size: 14px;
+  border-bottom: 1px solid white;
+}
+
+.Footer_Section {
+  background-color: #252525;
+}
+
+.Footer_col_ul {
+  padding-left: 5px;
+}
+
+.Footer_col_ul a:hover {
+  color: white;
+}
+
+.Footer_end {
+  padding-left: 20px;
+}
+
+.footer_input_li input {
+  width: 280px;
+}
+
+.send_btn2 {
+  width: 150px;
+  height: 50px;
+  background-color: red;
+  border: none;
+  color: white;
+}
+
+.send_btn2:hover {
+  background: transparent;
+  border: 1px solid red;
+  color: red;
+}
+.footer_end_a {
+  border-radius: 50%;
+}
+
+.Socials {
+  justify-content: space-between;
+}
+.Twitter,
+.Facebook,
+.LinkedIn,
+.Vimeo {
+  width: 27px;
+  height: 27px;
+  margin-top: 7px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding-left: 6px;
+}
+.twit,
+.fb,
+.lin,
+.vi {
+  font-size: 13px;
+  color: white;
+}
+.twit:hover,
+.fb:hover,
+.lin:hover,
+.vi:hover {
+  color: red;
+}
+
+.Footer_col_ul li:last-child {
+  border-bottom: none;
+}
+@media (min-width: 768px) {
+  .slider_img1,
+  .slider_img2,
+  .slider_img3 {
+    height: 400px;
+  }
+  .carousel-caption h1 {
+    font-size: 50px;
+  }
+
+  .circle_img {
+    width: 440px;
+    height: 393px;
+  }
+  .service_text {
+    padding-top: 25%;
+  }
+
+  .last_name,
+  .mailid {
+    margin-left: 40px;
+  }
+
+  .footer_input_li input {
+    width: 400px;
+  }
+
+  .charge_textarea {
+    width: 600px;
+  }
+
+  textarea {
+    width: 400px;
+  }
+
+  .Socials {
+    justify-content: space-evenly;
+    margin-left: -100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .slider_img1,
+  .slider_img2,
+  .slider_img3 {
+    height: 500px;
+  }
+  .carousel-caption h1 {
+    font-size: 60px;
+  }
+
+  .circle_img {
+    width: 573px;
+    height: 498px;
+  }
+
+  textarea {
+    width: 585px;
+    margin-left: 2px;
+  }
+
+  .send_btn {
+    display: block;
+    margin-left: 40%;
+  }
+
+  .footer__container {
+    flex-wrap: wrap;
+  }
+
+  .Location {
+    padding-left: 150px;
+  }
+
+  .footer_p1 {
+    max-width: 350px;
+  }
+
+  .Footer_col_ul {
+    margin-top: -30px;
+    padding-left: 150px;
+  }
+
+  .footer_col_ul_li {
+    font-size: 20px;
+  }
+
+  textarea {
+    width: 400px;
+  }
+  .Socials {
+    padding-left: 370px;
+  }
+
+  .Twitter,
+  .Facebook,
+  .LinkedIn,
+  .Vimeo {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Circle {
+    left: 20%;
+  }
+
+  .circle_img {
+    width: 600px;
+    height: 493px;
+  }
+  .service_text p:first-child {
+    font-size: 20px;
+  }
+
+  .service_text p {
+    font-size: 25px;
+  }
+
+  .footer__container {
+    margin-left: -100px;
+    padding-top: 40px;
+  }
+  .Footer_col_ul {
+    padding-left: 60px;
+  }
+
+  textarea {
+    width: 220px;
+  }
+
+  .footer_input_li input {
+    width: 220px;
+  }
+
+  .Socials {
+    margin-left: 300px;
+  }
+}

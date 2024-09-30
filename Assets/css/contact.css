@@ -1,0 +1,148 @@
+:root{
+    --first-color: #14213d;
+    --second-color: #fca311;
+    --font1:"Sevillana", cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    background-color: rgb(14, 13, 13);
+   
+}
+li {
+    list-style-type: none;
+}
+
+ul {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bars{
+    color: white;
+    font-size: 20px;
+    
+}
+
+.offcanvas{
+    background-color: var(--first-color);
+    
+}
+
+.Navigation{
+    height: 10vh;
+  }
+
+ .Logo h3{
+    font-family: var(--font1);
+ } 
+
+ h3,.contact-p1
+    {
+        padding-left: 30px;
+ }
+ .contact-p1{
+    color: grey;
+ }
+
+ input{
+    width: 85%;
+    height: 35px;
+    background: transparent;
+    border: none;
+    color: white;
+    border-bottom: 1px solid var(--second-color);
+ }
+
+ label,input,textarea,.submit-btn{
+    margin-left: 30px;
+
+ }
+
+ textarea{
+    width: 85%;
+    height: 100px;
+    background: transparent;
+    border: 1px solid var(--second-color);
+    color: white;
+ }
+
+ .submit-btn {
+    width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+  }
+
+  .submit-btn::before {
+    position: absolute;
+    content: "Submit";
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+  }
+  .submit-btn:hover {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .submit-btn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+  }
+  
+  .submit-btn:active {
+    transform: scale(0.95);
+  }
+ .Footer p{
+    font-size: 14px;
+    
+}
+
+ input:hover{
+    border: none;
+    box-shadow: 0px 0px 5px var(--second-color);
+ }
+
+ @media (min-width:768px){
+    .Navigation{
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      h3,.contact-p1{
+        text-align: center;
+      }
+
+}

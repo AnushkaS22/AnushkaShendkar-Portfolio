@@ -1,0 +1,225 @@
+li {
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+@media(min-width:320px){
+    .offcanvas-ul-li{
+        line-height: 2;
+        list-style-type: circle;
+        
+    }
+
+    .offcanvas{
+        background-color: antiquewhite;
+        color: brown;
+    }
+
+    
+
+    .slide1-btn1,.slide3-btn1{
+        background: transparent;
+        border: 2px solid white;
+        color: white;
+        border-radius: 20px;
+    }
+
+    .slide2-btn1{
+        background: transparent;
+            border: 2px solid black;
+            color: black;
+            border-radius: 20px;
+    }
+
+    .service-icon{
+        width:55px;
+        height:40px;
+    }
+
+    .service-text{
+        padding-left:10px;
+        
+    }
+
+    .services-ul-li{
+        padding-top: 30px;
+    }
+
+    .Services{
+        border-bottom: 1px solid gray;
+        background-color: gainsboro;
+    }
+
+    .essential-ul{
+        padding-right: 30px;
+    }
+
+    .essential-ul-li{
+        padding-top:20px;
+    }
+
+    .ViewMore{
+        padding:180px 20px 0px 20px;
+    }
+   
+    .viewmore-btn{
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+        border-radius: 20px;
+        margin-top:25px;
+    }
+
+    .header-list2-ul-li:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .header-icons a:hover{
+          color: red;
+    }
+
+    .slide1-btn1:hover,.slide3-btn1:hover,.viewmore-btn:hover{
+        background-color: white;
+        color: black;
+    }
+    
+   .qf-ul-li1-list,.qf-ul-li2-list{
+       padding-top: 30px;
+   }
+
+    
+   .qf-ul-li1-img{
+       width: 270px;
+       height: 500px;
+       
+   }
+
+   
+   .footer-input{
+       width:220px;
+       background: transparent;
+       border: none;
+       border-radius: 25px;
+       border:2px solid white;
+       margin-top:20px;
+   }
+
+   input[type="text"]::placeholder{
+        color: white;
+   }
+   
+   .footer-top h2,h4,h6,.footer-ul{
+       padding-top:50px;
+   }
+
+   .footer-arrow{
+       color: white;
+       margin-left:10px;
+   }
+   
+   .footer-ul-li{
+       padding-top: 15px;
+   }
+
+   .footer-ul-li:hover{
+       
+       cursor: pointer;
+       border-bottom: 2px solid red;
+   }
+
+   .footer-payment{
+       width:290px;
+       height:30px;
+   }
+}
+
+@media(min-width:768px){
+    .carousel-caption1,.carousel-caption3{
+        padding:0px 0px 70px 130px;
+    } 
+
+   .carousel-caption2{
+        padding:0px 0px 70px 10px;
+    }
+
+    .slide-h1,.slide2-h1,.slide3-h1{
+       font-size: 65px;
+    }
+
+   .slide-h2,.slide2-h2,.slide3-h2{
+       font-size:55px;
+   }
+
+   .slide1-btn1,.slide2-btn1,.slide3-btn1{
+       width:160px;
+       font-weight: bold;
+   }
+
+   .viewmore-btn{
+       width:170px;
+       height:30px;
+   }
+
+   .qf-ul-li1-img {
+       width: 500px;
+       height: 500px;
+
+   }
+
+   .footer-payment {
+    width: 310px;
+    height: 30px;
+}
+}
+
+@media(min-width:992px){
+    .header-list2-ul-li,.header-icons a{
+        padding-right:20px;
+    }
+
+    .header-icons a{
+        color: black;
+    }
+
+    .header-list2-ul-li{
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .carousel-caption1,
+    .carousel-caption3 {
+        padding: 0px 0px 140px 315px;
+    }
+    
+    .carousel-caption2 {
+        padding: 0px 0px 140px 5px;
+       
+    }
+
+    .qf-ul-li1-img{
+        height:600px;
+        padding-top: 100px;
+    }
+}
+
+@media(min-width:1200px){
+    .carousel-caption1,.carousel-caption3{
+        padding-left: 40%;
+    }
+
+    .carousel-caption2{
+        margin-left: -500px;
+    }
+
+    
+}
