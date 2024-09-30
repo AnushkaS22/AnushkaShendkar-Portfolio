@@ -119,8 +119,8 @@ a {
     position:absolute; 
     width: 255px;
     height: 255px;
-    top: 77.5%;
-    right: 8.9%;
+    top: 77.2%;
+    right: 9.2%;
     border-radius: 50%;
     background: linear-gradient(45deg, transparent,transparent 40%, #e5f403);
     animation: animate 2s linear infinite;
